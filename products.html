@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products – SmartHarvest GH</title>
+  <link rel="stylesheet" href="css/utils/variables.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:700,400|Open+Sans:400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <section class="redesigned-products">
+      <h1>Browse Farm Products</h1>
+      <div class="product-search-bar">
+        <input type="text" id="search-input" placeholder="Search products by name..." />
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="filters" style="display:flex;gap:1.2rem;justify-content:center;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;background:#f8faf8;padding:1.1rem 0.7rem 1.1rem 0.7rem;border-radius:12px;box-shadow:0 2px 12px rgba(56,142,60,0.07);">
+        <select id="filter-type" style="padding:0.6rem 1.1rem;border-radius:8px;border:1px solid #d0d0d0;font-size:1rem;background:#fff;color:var(--color-brown);min-width:160px;">
+          <option value="">All  Kinds of Farm Produce</option>
+        </select>
+        <a href="crop-calendar.html" class="cta-btn secondary" style="display:flex;align-items:center;gap:0.5rem;margin:0 1rem;min-width:160px;font-weight:600;font-size:1.05rem;box-shadow:0 2px 8px rgba(56,142,60,0.08);padding:0.7rem 1.5rem;border-radius:8px;transition:background 0.2s, color 0.2s;">
+          <img src="Farm products/🌱 Segredos Revelados para Sucesso na Agricultura Comercial! 🚜.jpeg" alt="Crop Calendar" style="width:28px;height:28px;object-fit:cover;border-radius:7px;box-shadow:0 1px 4px rgba(56,142,60,0.10);vertical-align:middle;"> Crop Calendar
+        </a>
+
+      </div>
+      <div class="product-cards" id="products-list" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem 1.5rem;justify-items:center;margin-top:2.2rem;margin-bottom:2.5rem;">
+        <div class="product-card">
+          <img src="Farm products/8 Tactics To Grow Tomatoes.jpeg" alt="Tomato" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Tomato</h3>
+            <p class="product-price">₦2,000</p>
+            <p class="product-quantity">Quantity: 50kg</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="Farm products/15 Best Fertilizers for Maize Farm [Organic & Inorganic].jpeg" alt="Maize" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Maize</h3>
+            <p class="product-price">₦1,800</p>
+            <p class="product-quantity">Quantity: 100kg</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="Farm products/cassava.jpeg" alt="Cassava" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Cassava</h3>
+            <p class="product-price">₦5,500</p>
+            <p class="product-quantity">Quantity: 30 bags</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="Farm products/Carrort farm.jpeg" alt="Carrot" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Carrot</h3>
+            <p class="product-price">₦3,000</p>
+            <p class="product-quantity">Quantity: 20kg</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="Farm products/cabbage.jpeg" alt="Cabbage" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Cabbage</h3>
+            <p class="product-price">₦2,500</p>
+            <p class="product-quantity">Quantity: 40kg</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="Farm products/Banana.jfif" alt="Banana" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Banana</h3>
+            <p class="product-price">₦1,200</p>
+            <p class="product-quantity">Quantity: 1 bunch</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="Farm products/Coconut farm.jpeg" alt="Coconut" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Coconut</h3>
+            <p class="product-price">₦2,000</p>
+            <p class="product-quantity">Quantity: 10 pieces</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="Farm products/Cocoa Farm.jpeg" alt="Cocoa" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Cocoa</h3>
+            <p class="product-price">₦10,000</p>
+            <p class="product-quantity">Quantity: 50kg</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="Farm products/cocoyam.jfif" alt="Cocoyam" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Cocoyam</h3>
+            <p class="product-price">₦4,000</p>
+            <p class="product-quantity">Quantity: 1 bag</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="Farm products/Creats Eggs.jfif" alt="Eggs" class="product-image" style="width:100%;max-width:220px;height:180px;object-fit:cover;border-radius:14px;">
+          <div class="product-info">
+            <h3 class="product-name">Eggs</h3>
+            <p class="product-price">₦1,500</p>
+            <p class="product-quantity">Quantity: 1 crate</p>
+            <button class="contact-farmer-btn">Contact Farmer</button>
+          </div>
+        </div>
+        <!-- Add more product cards as needed for demo -->
+      </div>
+      <div class="pagination-controls">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="page-info">Page 1</span>
+      </div>
+      <div id="no-results-message" style="display:none;text-align:center;color:var(--color-brown);font-size:1.1rem;margin-top:2rem;">No farm products found. Try adjusting your search or filters.</div>
+    </section>
+  </main>
+  <!-- Footer Include -->
+  <footer class="main-footer" style="background:#fff;padding:2rem 0;text-align:center;box-shadow:0 2px 10px rgba(56,142,60,0.08);">
+    <div class="footer-social" style="margin-bottom:1rem;">
+      <a href="https://facebook.com" target="_blank" rel="noopener" style="margin:0 12px;color:#4267B2;font-size:2rem;vertical-align:middle;">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener" style="margin:0 12px;color:#1DA1F2;font-size:2rem;vertical-align:middle;">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" style="margin:0 12px;color:#E1306C;font-size:2rem;vertical-align:middle;">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </div>
+    <div style="color:#888;font-size:1rem;">&copy; 2025 SmartHarvest GH. All rights reserved.</div>
+  </footer>
+
+  <!-- Ionicons CDN for social icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/products.js"></script>
+  <script>
+    fetch('components/header.html').then(r => r.text()).then(html => {
+      document.getElementById('header-placeholder').innerHTML = html;
+    });
+    fetch('components/footer.html').then(r => r.text()).then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+  </script>
+</body>
+</html>

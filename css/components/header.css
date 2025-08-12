@@ -1,0 +1,70 @@
+/* Modern Header Styles */
+@import '../utils/variables.css';
+.redesigned-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(56,142,60,0.06);
+  border-bottom: 2px solid var(--color-green);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+.logo {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--color-green);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: var(--color-brown);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover, .nav-links .btn-login:hover, .nav-links .btn-register:hover {
+  background: var(--color-green);
+  color: #fff;
+}
+.btn-login, .btn-register {
+  background: var(--color-yellow);
+  color: var(--color-brown);
+  border-radius: 6px;
+  padding: 8px 18px;
+  margin-left: var(--spacing-sm);
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-login:hover, .btn-register:hover {
+  background: var(--color-green);
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 100%;
+    align-items: flex-start;
+  }
+}

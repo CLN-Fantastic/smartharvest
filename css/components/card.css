@@ -1,0 +1,73 @@
+/* Modern Product Card Styles */
+@import '../utils/variables.css';
+.product-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(56,142,60,0.10);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 32px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  font-family: var(--font-body);
+  width: 100%;
+  /*max-width: 400px;
+  min-width: 300px;
+  min-height: 480px;
+  margin: 40px;
+  */
+  border: 1.5px solid #f0f0f0;
+}
+.product-card:hover {
+  box-shadow: 0 8px 32px rgba(56,142,60,0.18);
+  transform: translateY(-6px) scale(1.04);
+  border: 1.5px solid var(--color-green);
+}
+.product-image {
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 32px;
+  background: #f7faf7;
+  box-shadow: 0 2px 8px rgba(56,142,60,0.06);
+  display: block;
+}
+.product-info {
+  text-align: center;
+  width: 100%;
+}
+.product-name {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  margin: var(--spacing-xs) 0;
+  color: var(--color-green);
+}
+.product-price {
+  color: var(--color-yellow);
+  font-weight: bold;
+  margin: var(--spacing-xs) 0;
+  font-size: 1.1rem;
+}
+.product-quantity {
+  color: var(--color-brown);
+  margin-bottom: var(--spacing-sm);
+}
+.contact-farmer-btn {
+  background: var(--color-green);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: var(--spacing-sm);
+  transition: background 0.2s, color 0.2s;
+}
+.contact-farmer-btn:hover {
+  background: var(--color-yellow);
+  color: var(--color-brown);
+}
